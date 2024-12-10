@@ -49,7 +49,7 @@ fn findPaths(mat: std.ArrayList([]i32), allocator: anytype) !i32 {
     }
     
 
-    
+    //Can probably memorize paths and just keep how many 9s each path goes to.
     for (mat.items) |value| {
         for (value) |val| {
             if(val == 0){
